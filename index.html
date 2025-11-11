@@ -7,12 +7,31 @@
     <!-- 🧭 Open Graph / WhatsApp Preview -->
     <meta property="og:title" content="Marmita Fit da Camilla 🍱" />
     <meta property="og:description" content="Alimentação caseira e 100% natural. Clique aqui e encomende seu pedido!" />
-    <meta property="og:image" content="https://victor-ocn.github.io/marmitafit/marmita_fit_opt.jpg?v=8" />
+    <meta property="og:image" content="https://victor-ocn.github.io/marmitafit/marmita_fit_opt.jpg?v=10" />
     <meta property="og:url" content="https://victor-ocn.github.io/marmitafit/" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <title>Marmita Fit da Camilla 🍱</title>
+
+    <!-- 🔁 Redirecionamento inteligente -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const userAgent = navigator.userAgent.toLowerCase();
+        const isWhatsApp = userAgent.includes("whatsapp");
+        const isMobile = /android|iphone|ipad|ipod/i.test(userAgent);
+
+        if (isWhatsApp && isMobile) {
+          // Em navegadores internos do WhatsApp mobile, o JS é limitado
+          // Então usamos uma tag meta refresh injetada dinamicamente
+          const meta = document.createElement("meta");
+          meta.httpEquiv = "refresh";
+          meta.content =
+            "0;url=https://wa.me/5521980266800?text=Marmita%20Fit%20da%20Camilla%20🍱%0AAlimentação%20caseira%20e%20100%%20natural!%20Gostaria%20de%20encomendar%20um%20pedido.";
+          document.head.appendChild(meta);
+        }
+      });
+    </script>
 
     <style>
       body {
@@ -53,22 +72,10 @@
         background-color: #1ebe57;
       }
     </style>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-        const isWhatsApp = userAgent.toLowerCase().includes("whatsapp");
-        if (isWhatsApp) {
-          // Redireciona automaticamente se o link foi aberto dentro do WhatsApp
-          window.location.href =
-            "https://wa.me/5521980266800?text=Marmita%20Fit%20da%20Camilla%20🍱%0AAlimentação%20caseira%20e%20100%%20natural!%20Gostaria%20de%20encomendar%20um%20pedido.";
-        }
-      });
-    </script>
   </head>
 
   <body>
-    <img src="https://victor-ocn.github.io/marmitafit/marmita_fit_opt.jpg?v=8" alt="Marmita Fit da Camilla" />
+    <img src="https://victor-ocn.github.io/marmitafit/marmita_fit_opt.jpg?v=10" alt="Marmita Fit da Camilla" />
     <h1>Marmita Fit da Camilla 🍱</h1>
     <p>Alimentação caseira e 100% natural. Clique no botão abaixo para fazer seu pedido pelo WhatsApp.</p>
 
