@@ -6,69 +6,35 @@
 
     <!-- 🧭 Open Graph / WhatsApp Preview -->
     <meta property="og:title" content="Marmita Fit da Camilla 🍱" />
-    <meta property="og:description" content="🥗 Alimentação caseira e 100% natural. 🍱 Marmitas frescas, saborosas e saudáveis feitas com amor. 💚 Encomende agora pelo WhatsApp!" />
-    <meta property="og:image" content="https://victor-ocn.github.io/marmitafit/marmita_fit.jpg" />
+    <meta property="og:description" content="Alimentação caseira e 100% natural. Clique aqui e encomende seu pedido!" />
+    <meta property="og:image" content="https://victor-ocn.github.io/marmitafit/marmita_fit_otimizada.jpg?v=6" />
     <meta property="og:url" content="https://victor-ocn.github.io/marmitafit/" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <title>Marmita Fit da Camilla 🍱</title>
-
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #fff8f0;
-        color: #333;
-        text-align: center;
-        margin: 0;
-        padding: 40px;
-      }
-      img {
-        max-width: 300px;
-        border-radius: 16px;
-        margin-bottom: 20px;
-      }
-      h1 {
-        color: #e07a5f;
-      }
-      p {
-        font-size: 18px;
-        margin: 10px 0 30px;
-      }
-      a.whatsapp-button {
-        background-color: #25d366;
-        color: white;
-        padding: 14px 28px;
-        border-radius: 30px;
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: bold;
-        transition: background-color 0.2s;
-      }
-      a.whatsapp-button:hover {
-        background-color: #20b857;
-      }
-    </style>
   </head>
 
-  <body>
-    <img src="https://victor-ocn.github.io/marmitafit/marmita_fit.jpg" alt="Marmita Fit da Camilla" />
-    <h1>Marmita Fit da Camilla 🍱</h1>
-    <p>Alimentação caseira e 100% natural. Peça já sua marmita saudável!</p>
-    <a
-      href="https://wa.me/5521980266800?text=Marmita%20Fit%20da%20Camilla.%20Alimenta%C3%A7%C3%A3o%20caseira%20e%20100%25%20natural.%20Clique%20aqui%20e%20encomende%20seu%20pedido!"
-      class="whatsapp-button"
-    >
-      💬 Encomendar pelo WhatsApp
+  <body style="text-align:center; font-family:'Segoe UI', Roboto, sans-serif; background-color:#fff; margin:0; padding:50px 20px; color:#333;">
+    <h1 style="color:#25D366; margin-bottom:10px;">Marmita Fit da Camilla 🍱</h1>
+    <p style="font-size:18px; margin:10px 0;">Alimentação caseira e 100% natural.</p>
+    <p style="font-size:18px; margin:10px 0;"><strong>Clique abaixo para fazer seu pedido no WhatsApp 👇</strong></p>
+
+    <a href="https://wa.me/5521980266800?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20de%20marmita%20fit."
+       style="display:inline-block; margin-top:30px; padding:15px 35px; background-color:#25D366; color:white; text-decoration:none; border-radius:12px; font-size:20px;">
+       💬 Enviar mensagem no WhatsApp
     </a>
 
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=https://wa.me/5521980266800?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20de%20marmita%20fit.">
+    </noscript>
+
     <script>
-      const isWhatsApp = /WhatsApp/i.test(navigator.userAgent) || document.referrer.includes("whatsapp");
-      if (isWhatsApp) {
+      // Redireciona automaticamente quando o site é aberto fora do WhatsApp
+      if (window.top === window.self) {
         setTimeout(() => {
-          window.location.href =
-            "https://wa.me/5521980266800?text=Marmita%20Fit%20da%20Camilla.%20Alimenta%C3%A7%C3%A3o%20caseira%20e%20100%25%20natural.%20Clique%20aqui%20e%20encomende%20seu%20pedido!";
-        }, 1200); // aguarda 1,2s antes de tentar o redirecionamento
+          window.location.href = "https://wa.me/5521980266800?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20de%20marmita%20fit.";
+        }, 2000);
       }
     </script>
   </body>
