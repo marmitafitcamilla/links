@@ -7,36 +7,78 @@
     <!-- 🧭 Open Graph / WhatsApp Preview -->
     <meta property="og:title" content="Marmita Fit da Camilla 🍱" />
     <meta property="og:description" content="Alimentação caseira e 100% natural. Clique aqui e encomende seu pedido!" />
-    <meta property="og:image" content="https://victor-ocn.github.io/marmitafit/marmita_fit_otimizada.jpg?v=6" />
+    <meta property="og:image" content="https://victor-ocn.github.io/marmitafit/marmita_fit_opt.jpg?v=8" />
     <meta property="og:url" content="https://victor-ocn.github.io/marmitafit/" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <title>Marmita Fit da Camilla 🍱</title>
-  </head>
 
-  <body style="text-align:center; font-family:'Segoe UI', Roboto, sans-serif; background-color:#fff; margin:0; padding:50px 20px; color:#333;">
-    <h1 style="color:#25D366; margin-bottom:10px;">Marmita Fit da Camilla 🍱</h1>
-    <p style="font-size:18px; margin:10px 0;">Alimentação caseira e 100% natural.</p>
-    <p style="font-size:18px; margin:10px 0;"><strong>Clique abaixo para fazer seu pedido no WhatsApp 👇</strong></p>
-
-    <a href="https://wa.me/5521980266800?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20de%20marmita%20fit."
-       style="display:inline-block; margin-top:30px; padding:15px 35px; background-color:#25D366; color:white; text-decoration:none; border-radius:12px; font-size:20px;">
-       💬 Enviar mensagem no WhatsApp
-    </a>
-
-    <noscript>
-      <meta http-equiv="refresh" content="0; url=https://wa.me/5521980266800?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20de%20marmita%20fit.">
-    </noscript>
+    <style>
+      body {
+        font-family: "Segoe UI", Roboto, sans-serif;
+        background-color: #fffdf8;
+        color: #333;
+        text-align: center;
+        margin: 0;
+        padding: 2rem;
+      }
+      img {
+        max-width: 320px;
+        border-radius: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
+      h1 {
+        font-size: 1.8rem;
+        margin-top: 1.2rem;
+        color: #2b7a0b;
+      }
+      p {
+        font-size: 1.1rem;
+        margin: 0.8rem auto 1.5rem;
+        max-width: 360px;
+        line-height: 1.4;
+      }
+      a.whatsapp-btn {
+        background-color: #25d366;
+        color: white;
+        padding: 0.9rem 1.6rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition: background 0.3s ease;
+      }
+      a.whatsapp-btn:hover {
+        background-color: #1ebe57;
+      }
+    </style>
 
     <script>
-      // Redireciona automaticamente quando o site é aberto fora do WhatsApp
-      if (window.top === window.self) {
-        setTimeout(() => {
-          window.location.href = "https://wa.me/5521980266800?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20de%20marmita%20fit.";
-        }, 2000);
-      }
+      document.addEventListener("DOMContentLoaded", function () {
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        const isWhatsApp = userAgent.toLowerCase().includes("whatsapp");
+        if (isWhatsApp) {
+          // Redireciona automaticamente se o link foi aberto dentro do WhatsApp
+          window.location.href =
+            "https://wa.me/5521980266800?text=Marmita%20Fit%20da%20Camilla%20🍱%0AAlimentação%20caseira%20e%20100%%20natural!%20Gostaria%20de%20encomendar%20um%20pedido.";
+        }
+      });
     </script>
+  </head>
+
+  <body>
+    <img src="https://victor-ocn.github.io/marmitafit/marmita_fit_opt.jpg?v=8" alt="Marmita Fit da Camilla" />
+    <h1>Marmita Fit da Camilla 🍱</h1>
+    <p>Alimentação caseira e 100% natural. Clique no botão abaixo para fazer seu pedido pelo WhatsApp.</p>
+
+    <a
+      class="whatsapp-btn"
+      href="https://wa.me/5521980266800?text=Marmita%20Fit%20da%20Camilla%20🍱%0AAlimentação%20caseira%20e%20100%%20natural!%20Gostaria%20de%20encomendar%20um%20pedido."
+      target="_blank"
+    >
+      💬 Encomendar pelo WhatsApp
+    </a>
   </body>
 </html>
 
