@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- 🔒 Meta tags estáticas baseadas no template -->
-  <meta property="og:title" content="Marmita Fit da Camilla 🍱" />
-  <meta property="og:description" content="🍲 Marmitas naturais, caseiras e saudáveis. Clique e encomende seu pedido!" />
-  <meta property="og:image" content="https://victor-ocn.github.io/marmitafit/seg/marmita_fit.jpg" />
-  <meta property="og:url" content="https://victor-ocn.github.io/marmitafit/seg/" />
+  <meta property="og:title" content="{{title}}" />
+  <meta property="og:description" content="{{description}}" />
+  <meta property="og:image" content="{{image_full_url}}" />
+  <meta property="og:url" content="{{url}}" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <title>Marmita Fit da Camilla 🍱</title>
+  <title>{{title}}</title>
 
   <style>
     body {
@@ -44,26 +44,26 @@
       border-radius: 12px;
       font-size: 20px;
       font-weight: bold;
-      background-color: #25D366;
+      background-color: {{primary_color}};
     }
   </style>
 </head>
 
 <body>
 
-  <img src="marmita_fit.jpg" alt="Imagem" />
+  <img src="{{image}}" alt="Imagem" />
 
-  <h1>Marmita Fit da Camilla 🍱</h1>
+  <h1>{{title}}</h1>
 
-  <p>🍲 Marmitas naturais, caseiras e saudáveis. Clique e encomende seu pedido!</p>
+  <p>{{description}}</p>
 
-  <a class="button" href="https://wa.me/5521980266800?text=Olá!%20Gostaria%20de%20fazer%20meu%20pedido%20de%20marmita%20fit!">💬 Enviar mensagem no WhatsApp</a>
+  <a class="button" href="{{whatsapp_link}}">{{button_text}}</a>
 
   <script>
     // Redirecionamento automático
     setTimeout(() => {
-      window.location.href = "https://wa.me/5521980266800?text=Olá!%20Gostaria%20de%20fazer%20meu%20pedido%20de%20marmita%20fit!";
-    }, 2000);
+      window.location.href = "{{whatsapp_link}}";
+    }, {{redirect_delay}});
   </script>
 
 </body>
