@@ -2,7 +2,7 @@ import json
 
 # Caminhos dos arquivos
 CONFIG_FILE = "config.json"
-TEMPLATE_FILE = "template.html"
+TEMPLATE_FILE = "./templates/template.html"
 OUTPUT_FILE = "index.html"
 
 # Carregar JSON
