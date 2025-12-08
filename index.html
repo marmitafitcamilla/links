@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#10b981" />
+
+  <title>Marmita Fit da Camilla — Marmitas Saudáveis em Maricá e Niterói</title>
+  <meta name="description" content="Marmitas saudáveis, fitness e low-carb em Maricá e Niterói. Encomende seus kits personalizados, refeições balanceadas e receba na sua casa. Peça pelo WhatsApp." />
+  <link rel="canonical" href="https://marmitafitcamilla.github.io/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Marmita Fit da Camilla — Marmitas Saudáveis em Maricá e Niterói" />
+  <meta property="og:description" content="Marmitas fitness, porções balanceadas e kits semanais. Entrega em Maricá e Niterói. Peça agora pelo WhatsApp." />
+  <meta property="og:image" content="https://marmitafitcamilla.github.io/images/og-image.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://marmitafitcamilla.github.io/" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Marmita Fit da Camilla" />
+  <meta name="twitter:description" content="Marmitas saudáveis em Maricá e Niterói." />
+  <meta name="twitter:image" content="https://marmitafitcamilla.github.io/images/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.png" />
+
+  <!-- Tailwind via CDN (quick) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* small custom */
+    .gradient { background: linear-gradient(90deg,#06b6d4 0%, #10b981 100%); }
+    .glass { backdrop-filter: blur(6px) saturate(1.1); background-color: rgba(255,255,255,0.5); }
+    .whatsapp-float { position: fixed; right: 16px; bottom: 16px; z-index: 60; border-radius: 9999px; box-shadow: 0 10px 30px rgba(16,185,129,0.2); }
+    /* lightbox */
+    .lb-backdrop { position: fixed; inset:0; background: rgba(0,0,0,0.7); display:flex; align-items:center; justify-content:center; z-index:70; }
+    .lb-img { max-width:90%; max-height:90%; border-radius:12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+  </style>
+
+  <!-- Schema LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FoodEstablishment",
+    "name":"Marmita Fit da Camilla",
+    "image":"https://marmitafitcamilla.github.io/images/og-image.jpg",
+    "@id":"https://marmitafitcamilla.github.io/",
+    "url":"https://marmitafitcamilla.github.io/",
+    "telephone":"+5521980927987",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Maricá",
+      "addressRegion":"RJ",
+      "addressCountry":"BR"
+    },
+    "servesCuisine":"Comida saudável, Marmita fitness, Low carb",
+    "areaServed":["Maricá, RJ","Niterói, RJ"],
+    "sameAs":["https://instagram.com/marmita_fit_camilla","https://wa.me/5521980927987"]
+  }
+  </script>
+</head>
+<body class="antialiased text-gray-800 bg-gray-50">
+
+  <!-- Topbar -->
+  <header class="gradient text-white">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+    
+      <a href="#home" class="flex items-center gap-3">
+  	<img src="images/logo.png" 
+       	  alt="Logo Marmita Fit da Camilla" 
+       	  class="w-12 h-12 object-contain" />
+       	<div>
+    	  <div class="text-lg font-semibold">Marmita Fit da Camilla</div>
+    	  <div class="text-sm opacity-90">Marmitas saudáveis · Maricá · Niterói </div>
+  	  </div>
+      </a>
+
+
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="#menu" class="hover:underline">Cardápio</a>
+        <a href="#about" class="hover:underline">Sobre</a>
+        <a href="#galeria" class="hover:underline">Galeria</a>
+        <a href="#contato" class="hover:underline">Contato</a>
+        <a href="https://wa.me/5521980927987" class="ml-4 inline-block bg-white text-green-600 px-4 py-2 rounded-lg font-semibold">Pedir pelo WhatsApp</a>
+      </nav>
+
+      <div class="md:hidden">
+        <button id="menuBtn" class="p-2 rounded-md bg-white/20" aria-label="Abrir menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white shadow-sm">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex flex-col gap-3">
+      <a href="#menu">Cardápio</a>
+      <a href="#about">Sobre</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contato">Contato</a>
+      <a href="https://wa.me/5521980927987" class="mt-2 inline-block bg-green-500 text-white px-4 py-2 rounded">Pedir pelo WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Main / Hero -->
+  <main id="home" class="max-w-5xl mx-auto px-6 py-12">
+    <section class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-4xl font-extrabold leading-tight">Marmitas saudáveis, feitas com amor em <span class="text-green-600">Maricá</span></h1>
+        <p class="mt-4 text-gray-600">Cardápio personalizável com opções low-carb, proteínas magras e opções vegetarianas. Entregamos na sua casa — kits especiais com desconto!</p>
+
+        <div class="mt-6 flex gap-3">
+          <a class="inline-flex items-center gap-3 bg-green-600 text-white px-5 py-3 rounded-lg font-semibold shadow hover:bg-green-700" href="https://wa.me/5521980927987">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Pedir pelo WhatsApp
+          </a>
+
+          <a class="inline-flex items-center gap-3 border border-gray-200 px-5 py-3 rounded-lg font-semibold" href="#menu">Ver cardápio</a>
+        </div>
+
+        <dl class="mt-8 grid grid-cols-3 gap-4">
+          <div class="p-4 bg-white rounded-lg shadow">
+            <dt class="text-sm font-medium text-gray-500">Tempo médio</dt>
+            <dd class="mt-1 text-lg font-semibold">03 dias</dd>
+          </div>
+          <div class="p-4 bg-white rounded-lg shadow">
+            <dt class="text-sm font-medium text-gray-500">Opções</dt>
+            <dd class="mt-1 text-lg font-semibold">Fitness · Low-carb · Veg</dd>
+          </div>
+          <div class="p-4 bg-white rounded-lg shadow">
+            <dt class="text-sm font-medium text-gray-500">Entrega</dt>
+            <dd class="mt-1 text-lg font-semibold">Maricá e Niterói</dd>
+          </div>
+        </dl>
+      </div>
+
+      <!-- THIS BLOCK: hero image container — kept exactly same shape/height/badge -->
+      <div class="relative">
+        <div class="rounded-2xl overflow-hidden shadow-lg h-80">
+          <!-- single img element that will be swapped dynamically (keeps same box & styling) -->
+          <img id="heroSlide" src="images/hero.png" alt="Marmita fit da Camilla" class="w-full h-80 object-cover transition-opacity duration-700 opacity-100" loading="lazy" />
+        </div>
+
+        <div class="absolute -bottom-6 left-6 bg-white p-3 rounded-xl shadow-lg glass">
+          <div class="text-sm text-gray-500">Kits de 10, 15 e 30 unidades</div>
+          <div class="font-semibold">10% de desconto no 1º pedido</div>
+        </div>
+      </div>
+      <!-- end hero block -->
+
+    </section>
+
+    <!-- Cardápio (dynamic) -->
+    <section id="menu" class="mt-16">
+      <h2 class="text-2xl font-bold">Cardápio</h2>
+      <p class="text-gray-600 mt-2">Escolha entre nossas marmitas balanceadas — troque acompanhamentos ou peça opção low-carb. Temos dois tamanho: P (350 mL) e G (500mL). Preços no site relativos ao tamanho de 350mL.</p>
+
+      <div id="menuGrid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- cards generated by JS from menuItems -->
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="mt-16 bg-white rounded-lg p-6 shadow">
+      <h2 class="text-2xl font-bold">Sobre a Camilla</h2>
+      <p class="mt-3 text-gray-600">Olá. Sou a Camilla, apaixonada por comida saudável. Preparo marmitas equilibradas, com ingredientes frescos e porções pensadas para quem busca praticidade sem abrir mão do sabor.</p>
+
+      <div class="mt-4 flex gap-4 items-center">
+        <img src="images/camilla.png" alt="Camilla" class="w-24 h-24 rounded-full object-cover" loading="lazy" />
+        <div>
+          <div class="font-semibold">Camilla — Proprietária</div>
+          <div class="text-sm text-gray-500">Atendimento via WhatsApp e encomendas para semana</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery with lightbox -->
+    <section id="galeria" class="mt-16">
+      <h2 class="text-2xl font-bold">Galeria</h2>
+      <p class="text-gray-600 mt-2">Fotos reais das marmitas e embalagens.</p>
+
+      <div id="galleryGrid" class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <!-- thumbnails generated by JS from galleryImages -->
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="mt-16 bg-white rounded-lg p-6 shadow">
+      <h2 class="text-2xl font-bold">Clientes felizes</h2>
+      <div class="mt-4 grid sm:grid-cols-2 gap-4">
+        <blockquote class="p-4 border-l-4 border-green-500">
+          "Comida maravilhosa! Tem gosto de comida fresquinha e parece comida de mãe. Tudo muito gostoso e bem temperado, além de ser saudável. Nota1000!"
+          <footer class="mt-2 text-sm text-gray-500">— Gabriela Amaral, Niterói.</footer>
+        </blockquote>
+        <blockquote class="p-4 border-l-4 border-green-500">
+          "A melhor marmita da vida! Muito capricho, gostinho de comida caseira, variedade, poucas calorias e muuuuuito sabor! Estão de parabéns!!!! 😋😋😋😋"
+          <footer class="mt-2 text-sm text-gray-500">— Ana Paula, Niterói.</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer id="contato" class="mt-16 py-10">
+      <div class="bg-white rounded-lg p-6 shadow">
+        <h3 class="text-xl font-bold">Fale com a Camilla</h3>
+        <p class="text-gray-600 mt-2">Pedidos via WhatsApp — resposta rápida.</p>
+
+        <div class="mt-4 flex flex-col sm:flex-row sm:items-center gap-3">
+          <a href="https://wa.me/5521980927987" class="inline-flex items-center gap-3 bg-green-600 text-white px-4 py-3 rounded-lg font-semibold">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Pedir pelo WhatsApp
+          </a>
+
+          <div class="flex-1">
+            <p class="text-sm text-gray-600">Telefone: <strong>(21) 98092-7987</strong></p>
+            <p class="text-sm text-gray-600">Instagram: <a href="https://instagram.com/marmita_fit_camilla/" class="text-green-600">marmita_fit_camilla</a></p>
+          </div>
+        </div>
+
+        <div class="mt-4 text-sm text-gray-500">Entregamos em Maricá e Niterói. Horário: Seg–Sex 09:00–20:00 | Sáb 09:00–17:00</div>
+      </div>
+
+      <div class="mt-6 text-center text-gray-500 text-sm">© Marmita Fit da Camilla — Maricá e Niterói • Desenvolvido com carinho</div>
+    </footer>
+
+  </main>
+
+  <!-- Floating WhatsApp button -->
+  <a href="https://wa.me/5521980927987" class="whatsapp-float inline-flex items-center gap-3 bg-green-600 text-white p-4" aria-label="Pedir pelo WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  </a>
+
+  <!-- Lightbox container (hidden by default) -->
+  <div id="lightbox" style="display:none;" class="lb-backdrop" role="dialog" aria-hidden="true">
+    <img id="lbImg" class="lb-img" src="" alt="Foto ampliada" />
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('menuBtn');
+    const mobile = document.getElementById('mobileMenu');
+    btn && btn.addEventListener('click', () => {
+      if (mobile.classList.contains('hidden')) mobile.classList.remove('hidden'); else mobile.classList.add('hidden');
+    });
+
+    /* ---------------------------
+       HERO: dynamic images (same box)
+       --------------------------- */
+    (function(){
+      const heroImages = [
+        "images/hero_1.png",   // keep original hero first
+        "images/hero_2.png",
+        "images/hero_3.png",
+        "images/hero_cartao.png",
+        "images/hero_natal.png"
+      ];
+      let idx = 0;
+      const el = document.getElementById('heroSlide');
+
+      // pre-load next images (light)
+      heroImages.forEach(src => { const i=new Image(); i.src=src; });
+
+      setInterval(() => {
+        el.classList.add('opacity-0');
+        setTimeout(() => {
+          idx = (idx + 1) % heroImages.length;
+          el.src = heroImages[idx];
+          el.classList.remove('opacity-0');
+        }, 420); // fade duration (matches CSS duration-700)
+      }, 3000);
+    })();
+
+    /* ---------------------------
+       Dynamic Cardápio
+       Edit "menuItems" below to update items (title, desc, price, img, whatsapp)
+       --------------------------- */
+    (function(){
+      const menuItems = [
+        { title: "Carne moída", desc: "Carne de primeira, sem gordura.", price: "R$ 20,00", img: "images/carne_moida.jpg", whatsapp: "Olá, vi no site e quero fazer minha encomenda. Gostei da opção de Carne moida." },
+        { title: "Frango desfiado", desc: "Proteína magra, legumes da estação.", price: "R$ 18,00", img: "images/frango_desfiado.jpg", whatsapp: "Olá, vi no site e quero fazer minha encomenda. Gostei da opção de Frango desfiado." },
+        { title: "Marmita Vegetariana", desc: "Omelete ou proteína vegetal à sua escolha.", price: "R$ 18,00", img: "images/omelete.jpg", whatsapp: "Olá, vi no site e quero fazer minha encomenda. Gostei da opção Vegetariana" },
+        { title: "Frango com creme de milho", desc: "Opção com menos carboidrato e mais proteína.", price: "R$ 18,00", img: "images/frango_milho.jpg", whatsapp: "Olá, vi no site e quero fazer minha encomenda. Gostei da opção de Frango com creme de  milho." },
+        { title: "Estrogonofre de frango", desc: "Sem ingredientes industrializados, coma sem culpa.", price: "R$ 18,00", img: "images/estrogonofre.jpg", whatsapp: "Olá, vi no site e quero fazer minha encomenda. Gostei da opção de Estrogonofre de frango." },
+        {title: "Carne de panela", desc: "O sabor de aconchego, direto na sua casa.", price: "R$ 20,00", img: "images/carne_panela.jpg", whatsapp: "Olá, vi no site e quero fazer minha encomenda. Gostei da opção de Estrogonofre de frango." }  
+      ];
+
+      const grid = document.getElementById('menuGrid');
+      function buildCard(item){
+        const art = document.createElement('article');
+        art.className = "bg-white rounded-lg p-4 shadow";
+
+        art.innerHTML = `
+          <img src="${item.img}" alt="${item.title}" class="w-full h-40 object-cover rounded-md" loading="lazy" />
+          <h3 class="mt-3 font-semibold">${item.title}</h3>
+          <p class="text-sm text-gray-500">${item.desc}</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-lg font-bold">${item.price}</div>
+            <a href="https://wa.me/5521980927987?text=${encodeURIComponent(item.whatsapp)}" class="text-green-600 font-semibold">Pedir</a>
+          </div>
+        `;
+        return art;
+      }
+
+      // populate
+      menuItems.forEach(i => grid.appendChild(buildCard(i)));
+    })();
+
+    /* ---------------------------
+       Gallery & Lightbox
+       --------------------------- */
+    (function(){
+      const galleryImages = [
+        "images/image1.jpg","images/image2.jpg","images/image3.jpg",
+        "images/image4.jpg","images/image5.jpg","images/image6.jpg"
+      ];
+      const galleryGrid = document.getElementById('galleryGrid');
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lbImg');
+
+      function thumb(src, idx){
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = `marmita ${idx+1}`;
+        img.className = "w-full h-40 object-cover rounded-md shadow cursor-pointer";
+        img.loading = "lazy";
+        img.addEventListener('click', () => {
+          lbImg.src = src;
+          lb.style.display = 'flex';
+          lb.setAttribute('aria-hidden','false');
+        });
+        return img;
+      }
+
+      galleryImages.forEach((g,i) => galleryGrid.appendChild(thumb(g,i)));
+
+      // close lightbox on click outside or ESC
+      lb.addEventListener('click', (e) => {
+        if (e.target === lb || e.target === lbImg) {
+          lb.style.display = 'none';
+          lb.setAttribute('aria-hidden','true');
+          lbImg.src = '';
+        }
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') { lb.style.display = 'none'; lb.setAttribute('aria-hidden','true'); lbImg.src=''; }
+      });
+    })();
+
+  </script>
+</body>
+</html>
+
